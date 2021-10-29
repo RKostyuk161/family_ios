@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="family" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="13" translatesAutoresizingMaskIntoConstraints="NO" id="RFl-Md-fOK">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="13" translatesAutoresizingMaskIntoConstraints="NO" id="BC3-Lh-Rrx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ahJ-j7-73i">
+                                <rect key="frame" x="0.0" y="787" width="414" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vg-zH-KRd">
+                                        <rect key="frame" x="0.0" y="0.0" width="131.5" height="75"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="playButton"/>
+                                        <connections>
+                                            <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NSj-Au-Fmc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xgi-c9-9g3">
+                                        <rect key="frame" x="141.5" y="0.0" width="131" height="75"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="stopButton"/>
+                                        <connections>
+                                            <action selector="stopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Mx-3i-78u"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZrV-Wc-VI2">
+                                        <rect key="frame" x="282.5" y="0.0" width="131.5" height="75"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="" image="pauseButton"/>
+                                        <connections>
+                                            <action selector="pauseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zLN-Rd-PvD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="JYD-c2-xIC"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BC3-Lh-Rrx" secondAttribute="trailing" id="2dK-ht-DQU"/>
+                            <constraint firstItem="RFl-Md-fOK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2xd-nA-w0W"/>
+                            <constraint firstItem="RFl-Md-fOK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5jK-eB-p9r"/>
+                            <constraint firstItem="RFl-Md-fOK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8Mh-Nr-mpu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ahJ-j7-73i" secondAttribute="trailing" id="8PB-CW-F5e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BC3-Lh-Rrx" secondAttribute="bottom" id="Gg4-59-3ph"/>
+                            <constraint firstItem="BC3-Lh-Rrx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="I9e-9W-J2h"/>
+                            <constraint firstItem="ahJ-j7-73i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NYz-f8-qTd"/>
+                            <constraint firstItem="BC3-Lh-Rrx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OCf-2l-aam"/>
+                            <constraint firstItem="RFl-Md-fOK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TS2-Nt-cCg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ahJ-j7-73i" secondAttribute="bottom" id="pu4-O3-CrC"/>
+                            <constraint firstItem="ahJ-j7-73i" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tla-CK-qXF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fisrtMainView" destination="RFl-Md-fOK" id="XUj-cG-m6U"/>
+                        <outlet property="pauseButton" destination="ZrV-Wc-VI2" id="Q5j-TW-RO9"/>
+                        <outlet property="playButton" destination="0vg-zH-KRd" id="WX5-VO-3VZ"/>
+                        <outlet property="secondMainView" destination="BC3-Lh-Rrx" id="UU8-vC-8Th"/>
+                        <outlet property="stopButton" destination="Xgi-c9-9g3" id="SL5-zF-hA3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="13" width="1920" height="1080"/>
+        <image name="pauseButton" width="50" height="50"/>
+        <image name="playButton" width="50" height="50"/>
+        <image name="stopButton" width="50" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
